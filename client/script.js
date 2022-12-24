@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //fetch data from server
-  const response = await fetch('http://localhost:5000/', {
+  const response = await fetch('https://jschatopenai.onrender.com/', {
     method: 'POST',
     headers: { 'Content-type': 'application/json' },
     body: JSON.stringify({ prompt: data.get('prompt') }),
